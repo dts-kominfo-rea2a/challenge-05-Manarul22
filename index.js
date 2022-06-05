@@ -11,33 +11,25 @@ const sorter = (list, funcSort) => {
 
   let data = [];
   for (let counter = 0; counter < sortList.length; counter++) {
-    let dataLoop = "";
-    dataLoop += i + 1 + ". " + sortList[i];
-    data.push(dataLoop);
+    data.push(`${counter + 1}. ${names[counter]}`);
   }
   return data;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = (arr) => {
-  let data = arr.sort()
-  return data
-}
-
+const sortAscending = (arr) => arr.sort();
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
-const sortDescending = (arr) => {
-  let data = arr.sort().reverse()
-  return data
-}
-
-// ! JANGAN DIMODIFIKASI
-(function main() {
-  console.log(sorter?.(names, sortAscending)?.join("\n"));
-  console.log(sorter?.(names, sortDescending)?.join("\n"));
-})();
+const sortDescending = (arr) =>
+  arr.sort().reverse()(
+    // ! JANGAN DIMODIFIKASI
+    function main() {
+      console.log(sorter?.(names, sortAscending)?.join("\n"));
+      console.log(sorter?.(names, sortDescending)?.join("\n"));
+    }
+  )();
 
 module.exports = {
   sorter,
