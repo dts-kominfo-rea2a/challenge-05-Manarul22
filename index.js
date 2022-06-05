@@ -12,7 +12,7 @@ const sorter = (list, funcSort) => {
   let data = [];
   for (let counter = 0; counter < sortList.length; counter++) {
     let dataLoop = "";
-    dataLoop += `${counter} 1 . ${sortList[counter]}`
+    dataLoop += `${counter} 1 . ${sortList[counter]}`;
     data.push(dataLoop);
   }
   return data;
@@ -20,7 +20,10 @@ const sorter = (list, funcSort) => {
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = (list) => list.sort();
+const sortAscending = (list) => {
+  let dataList = list.sort();
+  return dataList;
+};
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
