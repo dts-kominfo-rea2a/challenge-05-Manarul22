@@ -12,7 +12,7 @@ const sorter = (list, funcSort) => {
   let data = [];
   for (let counter = 0; counter < sortList.length; counter++) {
     let dataLoop = "";
-    dataLoop += `${counter} 1 . ${sortList[counter]}`;
+    dataLoop += i + 1 + ". " + sortList[i];
     data.push(dataLoop);
   }
   return data;
