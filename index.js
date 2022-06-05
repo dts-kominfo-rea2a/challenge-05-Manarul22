@@ -20,17 +20,18 @@ const sorter = (list, funcSort) => {
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = (list) => {
-  let dataList = list.sort();
-  return dataList;
-};
+const sortAscending = (arr) => {
+  let data = arr.sort()
+  return data
+}
+
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
-const sortDescending = (list) => {
-  let dataList = list.sort().reverse();
-  return dataList;
-};
+const sortDescending = (arr) => {
+  let data = arr.sort().reverse()
+  return data
+}
 
 // ! JANGAN DIMODIFIKASI
 (function main() {
